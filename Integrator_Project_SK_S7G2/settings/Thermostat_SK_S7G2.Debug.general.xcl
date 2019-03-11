@@ -1,0 +1,21 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\bin\armjlink2.dll" 
+
+"C:\Workspace\e2_studio_621_SSP_150_Sept26\Thermostat_SK_S7G2\Debug\Exe\Thermost_SK_S7G2_V120.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\config\debugger\Renesas\R7FS_OCDID.dmac" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\config\debugger\Renesas\R7FS7_CLOCK.dmac" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\config\debugger\Renesas\R7FS_QSPI.dmac" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\config\debugger\Renesas\R7FS7G2.dmac" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench for Synergy 8.23.1_Sept26\arm\config\flashloader\Renesas\FlashR7FS7G27H.board" 
+
+
+
+
