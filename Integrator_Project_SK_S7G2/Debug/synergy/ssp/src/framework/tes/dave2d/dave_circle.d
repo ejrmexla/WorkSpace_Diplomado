@@ -1,13 +1,13 @@
 synergy/ssp/src/framework/tes/dave2d/dave_circle.o: ../synergy/ssp/src/framework/tes/dave2d/dave_circle.c \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_types.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_errorcodes.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_base.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_math.h \
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_types.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_errorcodes.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_base.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_math.h \
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h \
 ../synergy/ssp/src/framework/tes/dave2d/dave_intern.h \
 ../synergy/ssp/src/framework/tes/dave2d/dave_registermap.h \
 ../synergy/ssp/src/framework/tes/dave2d/dave_intern.h \
@@ -30,23 +30,23 @@ C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\
 ../synergy/ssp/src/framework/tes/dave2d/dave_curve.h \
 ../synergy/ssp/src/framework/tes/dave2d/dave_texture.h
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_types.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_types.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_errorcodes.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_errorcodes.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_base.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_base.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_math.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes/dave_math.h:
 
-C:\\Users\\JGFMEXID\\e2_studio\\workspace\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
+C:\\Users\\JGFMEXID\\Documents\\WorkSpace_DSE\\WorkSpace_Diplomado\\Integrator_Project_SK_S7G2\\synergy\\ssp\\inc\\framework\\tes\\dave_driver.h:
 
 ../synergy/ssp/src/framework/tes/dave2d/dave_intern.h:
 
