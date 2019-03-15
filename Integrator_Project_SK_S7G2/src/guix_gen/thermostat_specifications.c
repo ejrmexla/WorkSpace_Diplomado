@@ -6,7 +6,7 @@
 /*  www.expresslogic.com.                                                      */
 /*                                                                             */
 /*  GUIX Studio Revision 5.4.1.1                                               */
-/*  Date (dd.mm.yyyy):  9. 3.2019   Time (hh:mm): 11:46                        */
+/*  Date (dd.mm.yyyy): 15. 3.2019   Time (hh:mm): 10:29                        */
 /*******************************************************************************/
 
 
@@ -2649,7 +2649,7 @@ GX_CONST GX_STUDIO_WIDGET Settings_SettingsBackButton_1_define =
     #if defined(GX_WIDGET_USER_DATA)
     0,                                       /* user data                      */
     #endif
-    GX_STYLE_BORDER_NONE|GX_STYLE_ENABLED,   /* style flags                    */
+    GX_STYLE_BORDER_NONE|GX_STYLE_TRANSPARENT|GX_STYLE_ENABLED,   /* style flags */
     0,                                       /* status flags                   */
     sizeof(GX_PIXELMAP_BUTTON),              /* control block size             */
     GX_COLOR_ID_BTN_LOWER,                   /* normal color id                */
@@ -2928,6 +2928,20 @@ GX_PROMPT_PROPERTIES MainPage_SettingsTitle_1_properties =
     GX_COLOR_ID_TEXT_INPUT_TEXT,             /* normal text color              */
     GX_COLOR_ID_TEXT_INPUT_TEXT              /* selected text color            */
 };
+GX_PROMPT_PROPERTIES MainPage_DutyCicle_properties =
+{
+    GX_STRING_ID_INIT_DUTY_CICLE,            /* string id                      */
+    GX_FONT_ID_SCREENSAVER_DT,               /* font id                        */
+    GX_COLOR_ID_TEXT_INPUT_TEXT,             /* normal text color              */
+    GX_COLOR_ID_TEXT_INPUT_TEXT              /* selected text color            */
+};
+GX_PROMPT_PROPERTIES MainPage_Porcent_properties =
+{
+    GX_STRING_ID_PORCENT,                    /* string id                      */
+    GX_FONT_ID_SCREENSAVER_DT,               /* font id                        */
+    GX_COLOR_ID_TEXT_INPUT_TEXT,             /* normal text color              */
+    GX_COLOR_ID_TEXT_INPUT_TEXT              /* selected text color            */
+};
 GX_PIXELMAP_BUTTON_PROPERTIES MainPage_Start_Button_properties =
 {
     GX_PIXELMAP_ID_BUTTON_START,             /* normal pixelmap id             */
@@ -2940,16 +2954,16 @@ GX_PIXELMAP_BUTTON_PROPERTIES MainPage_Stop_Button_properties =
     0,                                       /* selected pixelmap id           */
     0                                        /* disabled pixelmap id           */
 };
-GX_PROMPT_PROPERTIES MainPage_DutyCicle_properties =
+GX_PROMPT_PROPERTIES MainPage_RPM_properties =
 {
     GX_STRING_ID_INIT_DUTY_CICLE,            /* string id                      */
     GX_FONT_ID_SCREENSAVER_DT,               /* font id                        */
     GX_COLOR_ID_TEXT_INPUT_TEXT,             /* normal text color              */
     GX_COLOR_ID_TEXT_INPUT_TEXT              /* selected text color            */
 };
-GX_PROMPT_PROPERTIES MainPage_DutyCicle_1_properties =
+GX_PROMPT_PROPERTIES MainPage_str_rmp_properties =
 {
-    GX_STRING_ID_PORCENT,                    /* string id                      */
+    GX_STRING_ID_STRING_4,                   /* string id                      */
     GX_FONT_ID_SCREENSAVER_DT,               /* font id                        */
     GX_COLOR_ID_TEXT_INPUT_TEXT,             /* normal text color              */
     GX_COLOR_ID_TEXT_INPUT_TEXT              /* selected text color            */
@@ -3461,9 +3475,9 @@ GX_CONST GX_STUDIO_WIDGET MainPage_SettingsTitle_1_define =
     (void *) &MainPage_SettingsTitle_1_properties /* extended properties       */
 };
 
-GX_CONST GX_STUDIO_WIDGET MainPage_DutyCicle_1_define =
+GX_CONST GX_STUDIO_WIDGET MainPage_str_rmp_define =
 {
-    "DutyCicle_1",
+    "str_rmp",
     GX_TYPE_PROMPT,                          /* widget type                    */
     ID_PORCENT_CICLE,                        /* widget id                      */
     #if defined(GX_WIDGET_USER_DATA)
@@ -3477,18 +3491,18 @@ GX_CONST GX_STUDIO_WIDGET MainPage_DutyCicle_1_define =
     gx_studio_prompt_create,                 /* create function                */
     GX_NULL,                                 /* drawing function override      */
     GX_NULL,                                 /* event function override        */
-    {183, 178, 222, 217},                    /* widget size                    */
+    {173, 203, 232, 242},                    /* widget size                    */
     GX_NULL,                                 /* no next widget                 */
     GX_NULL,                                 /* no child widgets               */ 
-    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_DutyCicle_1), /* control block   */
-    (void *) &MainPage_DutyCicle_1_properties /* extended properties           */
+    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_str_rmp), /* control block       */
+    (void *) &MainPage_str_rmp_properties    /* extended properties            */
 };
 
-GX_CONST GX_STUDIO_WIDGET MainPage_DutyCicle_define =
+GX_CONST GX_STUDIO_WIDGET MainPage_RPM_define =
 {
-    "DutyCicle",
+    "RPM",
     GX_TYPE_PROMPT,                          /* widget type                    */
-    ID_DUTY_CICLE,                           /* widget id                      */
+    ID_RPM,                                  /* widget id                      */
     #if defined(GX_WIDGET_USER_DATA)
     0,                                       /* user data                      */
     #endif
@@ -3500,11 +3514,11 @@ GX_CONST GX_STUDIO_WIDGET MainPage_DutyCicle_define =
     gx_studio_prompt_create,                 /* create function                */
     GX_NULL,                                 /* drawing function override      */
     GX_NULL,                                 /* event function override        */
-    {90, 178, 189, 217},                     /* widget size                    */
-    &MainPage_DutyCicle_1_define,            /* next widget definition         */
+    {69, 206, 168, 245},                     /* widget size                    */
+    &MainPage_str_rmp_define,                /* next widget definition         */
     GX_NULL,                                 /* no child widgets               */ 
-    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_DutyCicle), /* control block     */
-    (void *) &MainPage_DutyCicle_properties  /* extended properties            */
+    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_RPM), /* control block           */
+    (void *) &MainPage_RPM_properties        /* extended properties            */
 };
 
 GX_CONST GX_STUDIO_WIDGET MainPage_Stop_Button_define =
@@ -3524,7 +3538,7 @@ GX_CONST GX_STUDIO_WIDGET MainPage_Stop_Button_define =
     GX_NULL,                                 /* drawing function override      */
     GX_NULL,                                 /* event function override        */
     {154, 237, 223, 296},                    /* widget size                    */
-    &MainPage_DutyCicle_define,              /* next widget definition         */
+    &MainPage_RPM_define,                    /* next widget definition         */
     GX_NULL,                                 /* no child widgets               */ 
     offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_Stop_Button), /* control block   */
     (void *) &MainPage_Stop_Button_properties /* extended properties           */
@@ -3553,6 +3567,52 @@ GX_CONST GX_STUDIO_WIDGET MainPage_Start_Button_define =
     (void *) &MainPage_Start_Button_properties /* extended properties          */
 };
 
+GX_CONST GX_STUDIO_WIDGET MainPage_Porcent_define =
+{
+    "Porcent",
+    GX_TYPE_PROMPT,                          /* widget type                    */
+    ID_PORCENT_CICLE,                        /* widget id                      */
+    #if defined(GX_WIDGET_USER_DATA)
+    0,                                       /* user data                      */
+    #endif
+    GX_STYLE_BORDER_NONE|GX_STYLE_TRANSPARENT|GX_STYLE_TEXT_RIGHT,   /* style flags */
+    0,                                       /* status flags                   */
+    sizeof(GX_PROMPT),                       /* control block size             */
+    GX_COLOR_ID_WIDGET_FILL,                 /* normal color id                */
+    GX_COLOR_ID_SELECTED_FILL,               /* selected color id              */
+    gx_studio_prompt_create,                 /* create function                */
+    GX_NULL,                                 /* drawing function override      */
+    GX_NULL,                                 /* event function override        */
+    {183, 178, 222, 217},                    /* widget size                    */
+    &MainPage_Start_Button_define,           /* next widget definition         */
+    GX_NULL,                                 /* no child widgets               */ 
+    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_Porcent), /* control block       */
+    (void *) &MainPage_Porcent_properties    /* extended properties            */
+};
+
+GX_CONST GX_STUDIO_WIDGET MainPage_DutyCicle_define =
+{
+    "DutyCicle",
+    GX_TYPE_PROMPT,                          /* widget type                    */
+    ID_DUTY_CICLE,                           /* widget id                      */
+    #if defined(GX_WIDGET_USER_DATA)
+    0,                                       /* user data                      */
+    #endif
+    GX_STYLE_BORDER_NONE|GX_STYLE_TRANSPARENT|GX_STYLE_TEXT_RIGHT,   /* style flags */
+    0,                                       /* status flags                   */
+    sizeof(GX_PROMPT),                       /* control block size             */
+    GX_COLOR_ID_WIDGET_FILL,                 /* normal color id                */
+    GX_COLOR_ID_SELECTED_FILL,               /* selected color id              */
+    gx_studio_prompt_create,                 /* create function                */
+    GX_NULL,                                 /* drawing function override      */
+    GX_NULL,                                 /* event function override        */
+    {69, 177, 168, 216},                     /* widget size                    */
+    &MainPage_Porcent_define,                /* next widget definition         */
+    GX_NULL,                                 /* no child widgets               */ 
+    offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_DutyCicle), /* control block     */
+    (void *) &MainPage_DutyCicle_properties  /* extended properties            */
+};
+
 GX_CONST GX_STUDIO_WIDGET MainPage_SettingsButton_1_define =
 {
     "SettingsButton_1",
@@ -3561,7 +3621,7 @@ GX_CONST GX_STUDIO_WIDGET MainPage_SettingsButton_1_define =
     #if defined(GX_WIDGET_USER_DATA)
     0,                                       /* user data                      */
     #endif
-    GX_STYLE_BORDER_NONE|GX_STYLE_ENABLED,   /* style flags                    */
+    GX_STYLE_BORDER_NONE|GX_STYLE_TRANSPARENT|GX_STYLE_ENABLED,   /* style flags */
     0,                                       /* status flags                   */
     sizeof(GX_PIXELMAP_BUTTON),              /* control block size             */
     GX_COLOR_ID_BTN_LOWER,                   /* normal color id                */
@@ -3570,7 +3630,7 @@ GX_CONST GX_STUDIO_WIDGET MainPage_SettingsButton_1_define =
     GX_NULL,                                 /* drawing function override      */
     GX_NULL,                                 /* event function override        */
     {8, 243, 67, 302},                       /* widget size                    */
-    &MainPage_Start_Button_define,           /* next widget definition         */
+    &MainPage_DutyCicle_define,              /* next widget definition         */
     &MainPage_SettingsTitle_1_define,        /* child widget definition        */
     offsetof(MAINPAGE_CONTROL_BLOCK, MainPage_SettingsButton_1), /* control block */
     (void *) &MainPage_SettingsButton_1_properties /* extended properties      */

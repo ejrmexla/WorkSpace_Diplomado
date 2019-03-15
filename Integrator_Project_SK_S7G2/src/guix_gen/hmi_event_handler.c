@@ -5,6 +5,7 @@
  ***********************************************************************************************************************/
 #include "gx_api.h"
 #include "GlobalDefine.h"
+#include "Ram.h"
 #include "pwm_control.h"
 #include "guix_gen/thermostat_resources.h"
 #include "guix_gen/thermostat_specifications.h"
@@ -240,9 +241,10 @@ UINT mainpage_event(GX_WINDOW *widget, GX_EVENT *event_ptr)
             update_state_data(event_ptr);
             update_local_temp_string();
             update_text((GX_WIDGET *) widget, ID_TEMP_TEXT, g_local_temp_str);
-            pwm_control_entry ();
+            //pwm_control_entry ();
             update_text((GX_WIDGET *) widget, ID_DUTY_CICLE, g_dutycicle_str);
             update_text((GX_WIDGET *) widget, ID_PORCENT_CICLE, g_porcent_str);
+            update_text((GX_WIDGET *) widget, ID_RPM, g_rpm_str);
             //update_text((GX_WIDGET *) widget, ID_TEMP_TEXT_2, g_local_temp_str);
             break;
 
@@ -384,6 +386,7 @@ UINT thermostat_screen_event(GX_WINDOW * p_window, GX_EVENT *event_ptr)
             update_local_temp_string();
             update_text((GX_WIDGET *) p_widget, ID_TEMP_TEXT, g_local_temp_str);
             update_text((GX_WIDGET *) p_widget, ID_DUTY_CICLE, g_dutycicle_str);
+            update_text((GX_WIDGET *) p_widget, ID_RPM, g_rpm_str);
             break;
 
         case GXEVENT_MSG_TIME_UPDATE:
@@ -511,6 +514,7 @@ UINT thermostat_screen_event(GX_WINDOW * p_window, GX_EVENT *event_ptr)
         update_local_temp_string();
         update_text((GX_WIDGET *) p_widget, ID_TEMP_TEXT, g_local_temp_str);
         update_text((GX_WIDGET *) p_widget, ID_DUTY_CICLE, g_dutycicle_str);
+        update_text((GX_WIDGET *) p_widget, ID_RPM, g_rpm_str);
         /** Set the temperature units according to the current settings. */
         if(SYSTEM_TEMP_UNITS_F == g_gui_state.temp_units) {
             update_text_id((GX_WIDGET *) p_widget, ID_TEMP_UNIT_TEXT, GX_STRING_ID_FAHRENHEIT);
@@ -569,6 +573,7 @@ UINT settings_screen_event(GX_WINDOW *widget, GX_EVENT *event_ptr)
             update_text((GX_WIDGET *) widget, ID_TEMP_TEXT, g_local_temp_str);
             //update_text((GX_WIDGET *) widget, ID_TEMP_TEXT_2, g_local_temp_str);
             update_text((GX_WIDGET *) widget, ID_DUTY_CICLE, g_dutycicle_str);
+            update_text((GX_WIDGET *) widget, ID_RPM, g_rpm_str);
             break;
         case GXEVENT_MSG_TIME_UPDATE:
             update_state_data(event_ptr);
@@ -774,9 +779,11 @@ UINT settings_screen_event(GX_WINDOW *widget, GX_EVENT *event_ptr)
 
             snprintf(g_vol_str, sizeof(g_vol_str), "%d%%", g_gui_state.volume);
             update_text((GX_WIDGET *) widget, ID_VOLUME_TEXT, g_vol_str);
-            pwm_control_entry ();
+            //pwm_control_entry ();
             snprintf(g_dutycicle_str, sizeof(g_dutycicle_str), "%d", display_dutycycle);
             update_text((GX_WIDGET *) widget, ID_DUTY_CICLE, g_dutycicle_str);
+            snprintf(g_rpm_str, sizeof(g_rpm_str), "%d", u32Inst_RPM);
+            update_text((GX_WIDGET *) widget, ID_RPM, g_rpm_str);
 
             /** Update brightness text. */
             snprintf(g_bright_str, sizeof(g_bright_str), "%d%%", g_gui_state.brightness);
@@ -1220,6 +1227,8 @@ static void update_local_temp_string(void) {
         snprintf(g_local_temp_str, sizeof(g_local_temp_str), "%d", display_dutycycle);
         snprintf(g_dutycicle_str, sizeof(g_dutycicle_str), "%d", display_dutycycle);
         //snprintf(g_local_temp_str, sizeof(g_local_temp_str), "%2d.%1d", integer, frac);
+        snprintf(g_rpm_str, sizeof(g_rpm_str), "%d", u32Inst_RPM);
+ ;
     }
     else
     {
@@ -1227,6 +1236,7 @@ static void update_local_temp_string(void) {
         snprintf(g_local_temp_str, sizeof(g_local_temp_str), "%d", display_dutycycle);
         snprintf(g_dutycicle_str, sizeof(g_dutycicle_str), "%d", display_dutycycle);
         //snprintf(g_local_temp_str, sizeof(g_local_temp_str), "%d", temp_f);
+        snprintf(g_rpm_str, sizeof(g_rpm_str), "%d", u32Inst_RPM);
     }
 
 
@@ -1244,12 +1254,14 @@ static void update_target_temp_string(void) {
         int frac    = (int)roundf((g_gui_state.target_temp - (float)integer) * 10.0f);
         snprintf(g_target_temp_str, sizeof(g_target_temp_str), "%2d.%1d", integer, frac);
         snprintf(g_dutycicle_str, sizeof(g_dutycicle_str), "%d", display_dutycycle);
+        snprintf(g_rpm_str, sizeof(g_rpm_str), "%d", u32Inst_RPM);
     }
     else
     {
         float temp_f = c_to_f(g_gui_state.target_temp);
         snprintf(g_target_temp_str, sizeof(g_target_temp_str), "%d", (int) temp_f);
         snprintf(g_dutycicle_str, sizeof(g_dutycicle_str), "%d", display_dutycycle);
+        snprintf(g_rpm_str, sizeof(g_rpm_str), "%d", u32Inst_RPM);
     }
 
 }

@@ -86,10 +86,6 @@ src/audio.o: ../src/audio.c ../src/audio.h ../src/system_cfg.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_cgc.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_cgc_api.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt_input_capture.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_input_capture_api.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_timer_api.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_sci_spi.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_spi_api.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_transfer_api.h \
@@ -282,14 +278,6 @@ C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h:
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_cgc_api.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt_input_capture.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_input_capture_api.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_timer_api.h:
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_sci_spi.h:
 
