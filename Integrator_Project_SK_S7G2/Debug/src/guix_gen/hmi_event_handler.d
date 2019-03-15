@@ -52,6 +52,8 @@ src/guix_gen/hmi_event_handler.o: ../src/guix_gen/hmi_event_handler.c \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\framework\el/gx_port.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy_cfg\ssp_cfg\framework\el/gx_user.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/GlobalDefine.h \
+ C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/Ram.h \
+ C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/GlobalDefine.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src\synergy_gen/pwm_control.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\framework\el/tx_api.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src\synergy_gen/hal_data.h \
@@ -86,8 +88,6 @@ src/guix_gen/hmi_event_handler.o: ../src/guix_gen/hmi_event_handler.c \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_cgc.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_cgc_api.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt_input_capture.h \
- C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_input_capture_api.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_timer_api.h \
  C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/guix_gen/thermostat_resources.h \
@@ -216,6 +216,10 @@ C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/GlobalDefine.h:
 
+C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/Ram.h:
+
+C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src/GlobalDefine.h:
+
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\src\synergy_gen/pwm_control.h:
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\framework\el/tx_api.h:
@@ -283,10 +287,6 @@ C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy_cfg\ssp_cfg\driver/r_cgc_cfg.h:
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_cgc_api.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt_input_capture.h:
-
-C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\api/r_input_capture_api.h:
 
 C:\Users\JGFMEXID\Documents\WorkSpace_DSE\WorkSpace_Diplomado\Integrator_Project_SK_S7G2\synergy\ssp\inc\driver\instances/r_gpt.h:
 

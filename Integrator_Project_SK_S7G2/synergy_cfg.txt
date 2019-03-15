@@ -327,39 +327,6 @@ Synergy Configuration
     Instance "g_ioport I/O Port Driver on r_ioport"
       Name [Fixed]: g_ioport
       
-    Instance "g_timer0 Timer Driver on r_gpt"
-      Name: g_timer0
-      Channel: 7
-      Mode: PWM
-      Duty Cycle Range (only applicable in PWM mode): Shortest: 2 PCLK, Longest: (Period - 1) PCLK
-      Period Value: 1
-      Period Unit: Milliseconds
-      Duty Cycle Value: 100
-      Duty Cycle Unit: Unit Percent
-      Auto Start: False
-      GTIOCA Output Enabled: True
-      GTIOCA Stop Level: Pin Level Low
-      GTIOCB Output Enabled: True
-      GTIOCB Stop Level: Pin Level Low
-      Callback: NULL
-      Overflow Interrupt Priority: Priority 2
-      
-    Instance "g_input_capture Input Capture Driver on r_gpt_input_capture"
-      Name: g_input_capture
-      Channel: 0
-      Mode: Pulse Width
-      Signal Edge: Falling
-      Repetition: Periodic
-      Auto Start: True
-      Callback: input_capture_callback
-      Input Capture Signal Pin: GTIOCA
-      GTIOCx Signal Filter: None
-      Clock Divider: PCLK/1
-      Input Capture Enable Level: None
-      Input Capture Enable Filter: None (No filtering)
-      Capture Interrupt Priority: Priority 2
-      Overflow Interrupt Priority: Priority 2
-      
   Thread "System Thread"
     Symbol: system_thread
     Name: System Thread
@@ -764,8 +731,8 @@ Synergy Configuration
           Channel 2: Disabled
       Sample Hold States (Applies only to the 3 channels selected above): 24
       Callback: NULL
-      Scan End Interrupt Priority: Priority 3
-      Scan End Group B Interrupt Priority: Priority 3
+      Scan End Interrupt Priority: Priority 9
+      Scan End Group B Interrupt Priority: Priority 9
       
   Thread "Audio Playback"
     Symbol: audio_playback_thread
@@ -783,6 +750,47 @@ Synergy Configuration
     Auto start: Enabled
     Time slicing interval (ticks): 1
     
+    Instance "g_timer0 Timer Driver on r_gpt"
+      Name: g_timer0
+      Channel: 7
+      Mode: PWM
+      Duty Cycle Range (only applicable in PWM mode): Shortest: 2 PCLK, Longest: (Period - 1) PCLK
+      Period Value: 1
+      Period Unit: Milliseconds
+      Duty Cycle Value: 100
+      Duty Cycle Unit: Unit Percent
+      Auto Start: False
+      GTIOCA Output Enabled: True
+      GTIOCA Stop Level: Pin Level Low
+      GTIOCB Output Enabled: True
+      GTIOCB Stop Level: Pin Level Low
+      Callback: NULL
+      Overflow Interrupt Priority: Priority 3
+      
+  Thread "InputCapture"
+    Symbol: input_capture
+    Name: InputCapture
+    Stack size (bytes): 1024
+    Priority: 1
+    Auto start: Enabled
+    Time slicing interval (ticks): 1
+    
+    Instance "g_input_capture Input Capture Driver on r_gpt_input_capture"
+      Name: g_input_capture
+      Channel: 2
+      Mode: Period
+      Signal Edge: Falling
+      Repetition: Periodic
+      Auto Start: True
+      Callback: input_capture_callback
+      Input Capture Signal Pin: GTIOCA
+      GTIOCx Signal Filter: None
+      Clock Divider: PCLK/1
+      Input Capture Enable Level: None
+      Input Capture Enable Filter: None (No filtering)
+      Capture Interrupt Priority: Priority 1
+      Overflow Interrupt Priority: Priority 1
+      
   Messaging
     Event "Refresh"
       Symbol: SF_MESSAGE_EVENT_REFRESH

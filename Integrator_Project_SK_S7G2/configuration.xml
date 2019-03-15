@@ -614,8 +614,8 @@
       <property id="module.driver.adc.sample_hold_mask.channel_2" value="module.driver.adc.sample_hold_mask.channel_2.unused"/>
       <property id="module.driver.adc.sample_hold_states" value="24"/>
       <property id="module.driver.adc.p_callback" value="NULL"/>
-      <property id="module.driver.adc.scan_end_ipl" value="board.icu.common.irq.priority3"/>
-      <property id="module.driver.adc.scan_end_b_ipl" value="board.icu.common.irq.priority3"/>
+      <property id="module.driver.adc.scan_end_ipl" value="board.icu.common.irq.priority9"/>
+      <property id="module.driver.adc.scan_end_b_ipl" value="board.icu.common.irq.priority9"/>
     </module>
     <module id="module.driver.i2c_on_riic.972715994">
       <property id="module.driver.i2c.name" value="g_i2c"/>
@@ -636,7 +636,7 @@
     <module id="module.driver.jpeg_common.1858199463">
       <property id="module.driver.jpeg_common.name" value="g_jpeg_common0"/>
     </module>
-    <module id="module.driver.timer_on_gpt.1140496012">
+    <module id="module.driver.timer_on_gpt.1342333350">
       <property id="module.driver.timer.name" value="g_timer0"/>
       <property id="module.driver.timer.channel" value="7"/>
       <property id="module.driver.timer.mode" value="module.driver.timer.mode.mode_pwm"/>
@@ -651,12 +651,12 @@
       <property id="module.driver.timer.gtiocb_output_enabled" value="module.driver.timer.gtiocb_output_enabled.true"/>
       <property id="module.driver.timer.gtiocb_stop_level" value="module.driver.timer.gtiocb_stop_level.pin_level_low"/>
       <property id="module.driver.timer.p_callback" value="NULL"/>
-      <property id="module.driver.timer.irq_ipl" value="board.icu.common.irq.priority2"/>
+      <property id="module.driver.timer.irq_ipl" value="board.icu.common.irq.priority3"/>
     </module>
-    <module id="module.driver.input_capture_on_gpt.1394537896">
+    <module id="module.driver.input_capture_on_gpt.276204492">
       <property id="module.driver.input_capture.name" value="g_input_capture"/>
-      <property id="module.driver.input_capture.channel" value="0"/>
-      <property id="module.driver.input_capture.mode" value="module.driver.input_capture.mode.pulse_width"/>
+      <property id="module.driver.input_capture.channel" value="2"/>
+      <property id="module.driver.input_capture.mode" value="module.driver.input_capture.mode.period"/>
       <property id="module.driver.input_capture.signal_edge" value="module.driver.input_capture.signal_edge.falling"/>
       <property id="module.driver.input_capture.repetition" value="module.driver.input_capture.repetition.periodic"/>
       <property id="module.driver.input_capture.autostart" value="module.driver.input_capture.autostart.true"/>
@@ -666,16 +666,14 @@
       <property id="module.driver.input_capture.clock_divider" value="module.driver.input_capture.clock_divider.div1"/>
       <property id="module.driver.input_capture.enable_level" value="module.driver.input_capture.enable_level.none"/>
       <property id="module.driver.input_capture.enable_filter" value="module.driver.input_capture.enable_filter.none"/>
-      <property id="module.driver.input_capture.capture_ipl" value="board.icu.common.irq.priority2"/>
-      <property id="module.driver.input_capture.overflow_ipl" value="board.icu.common.irq.priority2"/>
+      <property id="module.driver.input_capture.capture_ipl" value="board.icu.common.irq.priority1"/>
+      <property id="module.driver.input_capture.overflow_ipl" value="board.icu.common.irq.priority1"/>
     </module>
     <context id="_hal.0">
       <stack module="module.driver.cgc_on_cgc.0"/>
       <stack module="module.driver.fmi_on_fmi.0"/>
       <stack module="module.driver.elc_on_elc.0"/>
       <stack module="module.driver.ioport_on_ioport.0"/>
-      <stack module="module.driver.timer_on_gpt.1140496012"/>
-      <stack module="module.driver.input_capture_on_gpt.1394537896"/>
     </context>
     <context id="rtos.threadx.thread.2073197129">
       <property id="_symbol" value="system_thread"/>
@@ -748,6 +746,16 @@
       <property id="rtos.threadx.thread.priority" value="1"/>
       <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
       <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <stack module="module.driver.timer_on_gpt.1342333350"/>
+    </context>
+    <context id="rtos.threadx.thread.1682026736">
+      <property id="_symbol" value="input_capture"/>
+      <property id="rtos.threadx.thread.name" value="InputCapture"/>
+      <property id="rtos.threadx.thread.stack" value="1024"/>
+      <property id="rtos.threadx.thread.priority" value="1"/>
+      <property id="rtos.threadx.thread.autostart" value="rtos.threadx.thread.autostart.enabled"/>
+      <property id="rtos.threadx.thread.timeslice" value="1"/>
+      <stack module="module.driver.input_capture_on_gpt.276204492"/>
     </context>
     <config id="config.driver.jpeg_decode">
       <property id="config.driver.jpeg_decode.param_checking_enable" value="config.driver.jpeg_decode.param_checking_enable.enabled"/>

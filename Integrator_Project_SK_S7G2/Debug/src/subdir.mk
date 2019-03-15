@@ -4,30 +4,36 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/Ram.c \
 ../src/audio.c \
 ../src/audio_playback_thread_entry.c \
 ../src/audio_sample.c \
 ../src/hal_entry.c \
+../src/input_capture_entry.c \
 ../src/pwm_control_entry.c \
 ../src/system_thread_entry.c \
 ../src/system_time.c \
 ../src/temperature_thread_entry.c 
 
 OBJS += \
+./src/Ram.o \
 ./src/audio.o \
 ./src/audio_playback_thread_entry.o \
 ./src/audio_sample.o \
 ./src/hal_entry.o \
+./src/input_capture_entry.o \
 ./src/pwm_control_entry.o \
 ./src/system_thread_entry.o \
 ./src/system_time.o \
 ./src/temperature_thread_entry.o 
 
 C_DEPS += \
+./src/Ram.d \
 ./src/audio.d \
 ./src/audio_playback_thread_entry.d \
 ./src/audio_sample.d \
 ./src/hal_entry.d \
+./src/input_capture_entry.d \
 ./src/pwm_control_entry.d \
 ./src/system_thread_entry.d \
 ./src/system_time.d \

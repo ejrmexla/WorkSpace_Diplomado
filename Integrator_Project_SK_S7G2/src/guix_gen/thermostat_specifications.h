@@ -6,7 +6,7 @@
 /*  www.expresslogic.com.                                                      */
 /*                                                                             */
 /*  GUIX Studio Revision 5.4.1.1                                               */
-/*  Date (dd.mm.yyyy):  9. 3.2019   Time (hh:mm): 11:46                        */
+/*  Date (dd.mm.yyyy): 15. 3.2019   Time (hh:mm): 10:29                        */
 /*******************************************************************************/
 
 
@@ -84,14 +84,15 @@ extern   "C" {
 #define ID_THERMO_BUTTON 60
 #define ID_TEMP_TEXT_2 61
 #define ID_TEMP_UNIT_TEXT_2 62
-#define ID_START_BUTTON 63
-#define ID_STOP_BUTTON 64
-#define ID_DUTY_CICLE 65
-#define ID_PORCENT_CICLE 66
-#define ID_SPLASH_SCREEN 67
-#define ID_WEEKDAY_TEXT 68
-#define ID_DATE_TEXT 69
-#define ID_VERSION_TEXT 70
+#define ID_DUTY_CICLE 63
+#define ID_PORCENT_CICLE 64
+#define ID_START_BUTTON 65
+#define ID_STOP_BUTTON 66
+#define ID_RPM 67
+#define ID_SPLASH_SCREEN 68
+#define ID_WEEKDAY_TEXT 69
+#define ID_DATE_TEXT 70
+#define ID_VERSION_TEXT 71
 
 
 /* Declare properties structures for each utilized widget type                 */
@@ -283,10 +284,12 @@ typedef struct MAINPAGE_CONTROL_BLOCK_STRUCT
     GX_ICON MainPage_icon_1;
     GX_PIXELMAP_BUTTON MainPage_SettingsButton_1;
     GX_PROMPT MainPage_SettingsTitle_1;
+    GX_PROMPT MainPage_DutyCicle;
+    GX_PROMPT MainPage_Porcent;
     GX_PIXELMAP_BUTTON MainPage_Start_Button;
     GX_PIXELMAP_BUTTON MainPage_Stop_Button;
-    GX_PROMPT MainPage_DutyCicle;
-    GX_PROMPT MainPage_DutyCicle_1;
+    GX_PROMPT MainPage_RPM;
+    GX_PROMPT MainPage_str_rmp;
 } MAINPAGE_CONTROL_BLOCK;
 
 typedef struct SPLASH_CONTROL_BLOCK_STRUCT
